@@ -5,17 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event_Management</title>
     <style>
-        .img{
-            width:60%;
-            height:40%;
-        }
+    .container{
+        border:2px solid black;
+        height:500px;
+        width: 1200px;
+        display: flex;
+        margin-left:150px;
+        margin-top: 30px;
+    }
+     .im{
+        /*height:400px;*/
+        width:1200px;
+        object-fit:cover;
+        position: relative;
+     }
+     .navi{
+        background-color: black;
+        height:40px;
+        padding-top: 18px;
+     }
+    .navi li{
+        list-style-type: none;
+        display: inline;
+        padding:7px;
+        color: antiquewhite;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+
+       
+    } 
+   
+    /*.bbox{
+        border: 3px solid black;
+        width:950px;
+        height: 550px;   
+        display:flex;
+        margin-left:250px;
+        margin-top:30px;
+        flex-wrap:wrap;
+      
+    }
+    .sbox1{
+        
+        width:250px;
+        height: 300px;
+        border: 3px solid black;
+        margin-right:15px;
+    }*/
+    .bbox{
+        width:33.33%;
+        box-sizing: border-box;
+        float: left;
+        padding: 10px;
+    }
+    .sbox{
+        width: 100%;
+        height: auto;
+    }
+   @media(max-width:768px){
+    .bbox{
+        width:50%;
+    }
+   }
+   .btn{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width:200px;
+    height: 50px;
+    left:650px;
+    border-radius: 20px;
+    bottom: 170px;
+    font-weight: bold;
+    text-align: center;
+    
+
+   }
     </style>
+
 </head>
 <body>
-        <img class="img" src="img2.jpg" alt="event_management" usemap="#decor">
-        <map name="decor">
-            <area shape="circle" coords="300,259,60" alt="cake" href="https://chennai.cakewalk.co.in/" target="_blank" >
-            <area shape="poly" coords="6,389,11,1113,840,1103,846,425" alt="decor" href="https://www.google.co.in/" target="_blank">
-        </map>
+    <nav>
+        <ul class="navi">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img class="im" src="img2.jpg" alt="image_"> 
+         <button class="btn">BOOK YOUR DATE</button>
+    </div>
+    <div class="bbox">
+        <div class="sbox1">
+        </div>
+        <div class="sbox1">
+
+        </div>
+        <div class="sbox1">
+        </div>
+        <div class="sbox1">
+        </div>
+        <div class="sbox1">
+        </div>
+    </div>
 </body>
 </html>
