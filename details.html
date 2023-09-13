@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            border:2px solid black;
+            border-radius: 10px;
+            /* text-align: center;
+            justify-content: center;
+            align-items: center; */
+            width:450px;
+            height: 500px;
+            margin-top: 50px;
+            padding:30px;
+            position:absolute;
+            top:30%;
+            left:40%;
+            margin: -100px 0 0 -150px;
+            }
+        label{
+            display: inline-block;
+            width:150px;
+            /* margin-left:150px;
+            margin-right:30px; */
+            /* margin-top: auto; */
+            font-size: 17px;
+            font-weight: 270px;;
+            
+            
+
+        }
+        input,textarea,select{
+            margin:5px;
+            border: 1px solid black;
+            padding:6px;
+            border-radius: 3px;
+            
+        }
+        small{
+            width:400px;
+            height: auto;
+            /* margin-left:160px; */
+            font-weight: 500;
+            font-size: medium;
+            
+        }
+        button{
+            padding:10px;
+            color:beige;
+            margin-left:200px;
+            background-color: black;
+            font-weight: bold;
+            margin-top:50px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <form name="details_form" id="form" >
+             <div class="input_control">
+                <label for="fname">First Name</label>
+                <input  id="fname" name="fname" type="text" placeholder="Enter your First name" >
+                <small></small>
+                
+            </div>
+            <div class="input_control">
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="Enter your Last name" id="lname" name="lname" >
+                <small></small>
+            </div> 
+            <div class="input_control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email">
+                <small></small>
+            </div>
+            <div class="input_control">
+                <label for="phno">Contact No</label>
+                <input type="tel" placeholder="Contact Number" name="phno" id="phno" >
+                <small></small>
+            </div>
+            <div class="input_control">
+                <label for="address">Address</label>
+                <textarea id="address"placeholder="Enter Your Address"></textarea>
+                <small></small>
+            </div>
+
+            <div class="input_control">
+                <label for="date"> Date of Event</label>
+                <input type="date" id="date"> 
+                <small></small><br> 
+            </div>
+            
+            <label>Type of Event</label>
+            <select>
+                <option value="wedding">Wedding</option>
+                <option value="Corporate_Event">Corporate Event</option>
+                <option value="Gender_reveal">Gender Reveal</option>
+                <option value="Parties">Parties</option>
+                <option value="Get-Together">Get-togther</option>
+                <option value="Schhol/College Events">School/College Event</option>
+            </select> <small></small><br>
+
+            <button type="submit">Submit</button>
+
+    
+        </form>
+        <script src="script.js"></script>
+    </div>
+ </body>
+

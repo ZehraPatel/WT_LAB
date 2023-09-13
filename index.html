@@ -4,37 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event_Management</title>
+    
     <style>
-    .container{
+        body{
+            margin: 0px;
+            padding: 0px;
+            /* background-image: url(card6.jpeg);
+            background-repeat: no-repeat; */
+            
+        }
+        .container{
         border:2px solid black;
-        height:500px;
-        width: 1200px;
+        height:600px;
+        width: 1500px; 
         display: flex;
-        margin-left:150px;
-        margin-top: 30px;
-    }
-     .im{
-        /*height:400px;*/
-        width:1200px;
-        object-fit:cover;
-        position: relative;
+        flex-wrap: wrap;
+        margin: 0px;
+      
+        /* margin-top: 30px; */
+         }
+        .im{
+
+        /* width:1200px;
+        height:600px; */
+        height:600px;
+        width: 1500px; 
+        object-fit:fill;
+        /* margin-left: 200px; */
+        /* justify-content: center;
+        align-items: center; */
+        /* position: relative; */
+       
      }
      .navi{
-        background-color: black;
+        background-color: black; 
         height:40px;
         padding-top: 18px;
+      
      }
     .navi li{
         list-style-type: none;
         display: inline;
-        padding:7px;
-        color: antiquewhite;
+        padding:5px;
+        
         justify-content: center;
         align-items: center;
         font-weight: bold;
+        
+
 
        
     } 
+    .navi li a{
+        text-decoration: none;
+        color:white;
+        font-size: 17px;
+    }
    
     /*.bbox{
         border: 3px solid black;
@@ -53,16 +78,8 @@
         border: 3px solid black;
         margin-right:15px;
     }*/
-    .bbox{
-        width:33.33%;
-        box-sizing: border-box;
-        float: left;
-        padding: 10px;
-    }
-    .sbox{
-        width: 100%;
-        height: auto;
-    }
+    
+  
    @media(max-width:768px){
     .bbox{
         width:50%;
@@ -70,46 +87,106 @@
    }
    .btn{
     position: absolute;
-    background-color: black;
-    color: white;
     width:200px;
     height: 50px;
     left:650px;
     border-radius: 20px;
     bottom: 170px;
-    font-weight: bold;
     text-align: center;
     
 
    }
-    </style>
+   
 
+.image_slide{
+    width:600px;
+    height: 1000px;
+    background-image: url(img2.jpg);
+    animation:slide 8s;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.05,0.05,0.05,0.05);
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0%{
+        background-image: url(img2.jpg);
+    }
+     50%{
+        background-image: url(img3.jpg);
+    }
+    100%{
+        background-image: url(img2.jpg);
+    }
+    
+}
+    </style>
+<script src="index.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <nav>
         <ul class="navi">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="details.html" target="_blank">Contact</a></li>
         </ul>
     </nav>
+    
     <div class="container">
-        <img class="im" src="img2.jpg" alt="image_"> 
-         <button class="btn">BOOK YOUR DATE</button>
-    </div>
+        <img class="im" src="card7.jpeg" alt="image_"> 
+        
+        
+         <button class="btn" style="color:white;background-color: black; font-weight: bold;">BOOK YOUR DATE</button>
+    </div> 
+    <!-- <div class="image_slide">
+
+    </div> -->
+    <hr>
     <div class="bbox">
         <div class="sbox1">
+            
+            <img class="simg" src="card1.jpeg" alt="img1">
+            <div class="inner">
+                <p>Foods and Drinks</p>
+            </div>
+           
         </div>
         <div class="sbox1">
+            <img class="simg" src="card2.jpeg" alt="img1">
+            <div class="inner">
+                <p>Bridal MakeUp</p>
+            </div>
+        </div>
+        <div class="sbox1">
+            <img class="simg" src="card3.jpeg" alt="img1">
+            <div class="inner">
+                <p>Invitation Card</p>
+            </div>
+        </div>
+        <div class="sbox1">
+            <img class="simg" src="card4.jpeg" alt="img1">
+            <div class="inner">
+                <p>Photo Shoot</p>
+            </div>
+        </div>
+        <div class="sbox1">
+            <img class="simg" src="card5.jpeg" alt="img1">
+            <div class="inner">
+                <p>Venue Selection</p>
+            </div>
+        </div>
+        <div class="sbox1">
+            <img class="simg" src="card6.jpeg" alt="img1">
+            <div class="inner">
+                <p>Wedding</p>
 
+            </div>
         </div>
-        <div class="sbox1">
-        </div>
-        <div class="sbox1">
-        </div>
-        <div class="sbox1">
-        </div>
+       
     </div>
+    <a href="details.html" target="_blank">Contact</a>
+    
 </body>
 </html>

@@ -1,0 +1,50 @@
+.bbox{
+    width:850px;
+    height: 800px;
+     border: 2px solid white;
+   /* justify-content: center; */
+    justify-self: center;
+    padding: 10px;
+    margin-left: 310px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap:15px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap:wrap; */
+    margin-top: 60px;
+    box-shadow: 5px black;
+    text-align: center;
+    /* position:relative; */
+  
+}
+
+.simg{
+    width:220px;
+    height: 277px;
+    margin:15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+.sbox1{
+        width: 250px;
+        height: 300px;
+        background-color:rgb(211, 201, 201);
+        margin-right: 5px;
+        margin-left: 5px;
+        padding:0px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+.inner{
+        /* position: relative; */
+        width:200px;
+        height: 50px;
+        border:1px solid white;
+        margin-left: 25px;
+        top: 0px;
+        box-shadow: 4px 5px 4px grey;
+        
+    }
